@@ -1,0 +1,28 @@
+{
+	"name": "ashish/laravel-user-discounts",
+	"description": "Laravel package for deterministic user-level discounts with stacking, caps and audits.",
+	"type": "library",
+	"require": {
+		"orchestra/testbench-core": "^10.8"
+	},
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"Ashish\\UserDiscounts\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Ashish Sanura",
+			"email": "ashishsanura39@gmail.com"
+		}
+	],
+	"extra": {
+	"laravel": {
+			"providers": [
+				"Ashish\\UserDiscounts\\UserDiscountsServiceProvider"
+			]
+		}
+	},
+	"minimum-stability": "stable"
+}

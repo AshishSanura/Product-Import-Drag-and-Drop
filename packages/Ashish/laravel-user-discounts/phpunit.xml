@@ -1,0 +1,5 @@
+<testsuites>
+    <testsuite name="package">
+        <directory suffix="Test.php">./tests</directory>
+    </testsuite>
+</testsuites>

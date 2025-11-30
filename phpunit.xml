@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+		 colors="true"
+		 convertDeprecationsToExceptions="false"
+		 convertWarningsToExceptions="false"
+		 processIsolation="false"
+		 stopOnFailure="false">
+
+	<php>
+		<server name="APP_ENV" value="local"/>
+		<server name="DB_CONNECTION" value="mysql"/>
+		<server name="APP_DEBUG" value="true"/>
+
+	</php>
+
+	<testsuites>
+		<testsuite name="Project Test Suite">
+			<directory suffix="Test.php">./tests</directory>
+		</testsuite>
+
+		<testsuite name="Package Tests">
+			<directory suffix="Test.php">./packages/Ashish/laravel-user-discounts/tests</directory>
+		</testsuite>
+	</testsuites>
+
+	<coverage processUncoveredFiles="true">
+		<include>
+			<directory>./app</directory>
+			<directory>./packages/Ashish/laravel-user-discounts/src</directory>
+		</include>
+	</coverage>
+
+</phpunit>
