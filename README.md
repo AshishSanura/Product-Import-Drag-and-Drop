@@ -16,6 +16,7 @@ cd Product-Import-Drag-and-Drop
 
 3) php artisan make:mock-csv
 	--> THis Command Create Demo CSV.
+	--> The CSV image should be in the folder path. Ex:- storage\app\public\products\Ashish.jpeg
 	
 4) Task - A:- Run After
 	-->php artisan queue:work (Please run Command)
@@ -23,6 +24,7 @@ cd Product-Import-Drag-and-Drop
 		-->php artisan test --filter=CsvImportTest
 
 5) Task - B:- Run After
+	--> The CSV image should be in the folder path. Ex:- storage\app\public\products\Ashish.jpeg
 	-->php artisan queue:work (Please run Command)
 	--> Unit Test run command
 		-->php artisan test

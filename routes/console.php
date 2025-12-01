@@ -14,7 +14,6 @@ Artisan::command('make:mock-csv', function () {
 			"Product {$i}",
 			"This is the description for Product {$i}",
 			rand(100, 5000),
-			"Ashish.jpeg"
 		]);
 	}
 

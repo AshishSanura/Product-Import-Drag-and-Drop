@@ -6,8 +6,6 @@ use App\Http\Controllers\ProductImportController;
 use App\Http\Controllers\ImageUploadController;
 
 
-Route::get('/', fn() => 'ok');
-
 // CSV Import
 Route::get('/',[ProductImportController::class,'index']);
 Route::get('products/import',[ProductImportController::class,'index']);
